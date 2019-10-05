@@ -1,3 +1,12 @@
+# Template global
+PageCore correspond au template global de mes futures applications.
+Le template est acheté sur le net et adapté selon mon envie.
+
+
+# Applications selon un workspace style monorepo
+Création des applications suivant le principe de monorepo afin 
+d'avoir un template global à toutes mes applications
+
 # Applications
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
