@@ -1,0 +1,63 @@
+/* $header
+ ------------------------------------------*/
+mat-toolbar {
+  .toolbar-avatar {
+    width: 40px;
+    height: 40px;
+    line-height: 24px;
+  }
+
+  .toolbar-avatar img {
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  &.main-header {
+    padding: 0 8px;
+    position: relative;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+    z-index: 9;
+
+    .branding {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: auto 0;
+      line-height: 50px;
+      padding: 0 64px 0 16px;
+    }
+
+    .logo {
+      background-image: url(/assets/images/logo.png);
+      width: 100px;
+      height: 75px;
+      background-repeat:no-repeat;
+      -webkit-background-size: 100px 75px;
+      background-size: 100px 75px;
+      margin: auto;
+    }
+  }
+}
+
+// Specific height for mobile devices in portrait mode.
+@media ($mat-xsmall) and (orientation: portrait) {
+  mat-toolbar {
+    &.main-header {
+      .branding {
+        padding: 0 16px 0 16px;
+      }
+
+      .logo {
+        width: 87px;
+        height: 20px;
+        -webkit-background-size: 87px 20px;
+        background-size: 87px 20px;
+      }
+    }
+  }
+}
